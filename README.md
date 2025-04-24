@@ -20,6 +20,11 @@
 .env.example을 참고하여 .env를 생성하고 Azure Open AI에서 발급받은 key값과 endpoint를 입력하세요. 
 ![credentials](./images/azure_openai_credentials.png)
 
+4. 애플리케이션 실행 
+    ```
+    streamlint run main.py
+    ```
+
 5. 도커 build 및 push
     ```
     docker build --platform linux/amd64 -t <your-docker-repo-name>/aoai-demo-app:latest .
