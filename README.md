@@ -28,6 +28,7 @@
 5. 도커 build 및 push
     ```
     docker build --platform linux/amd64 -t <your-docker-repo-name>/aoai-demo-app:latest .
+    docker run -p 8501:80 <your-docker-repo-name>/aoai-demo-app:latest
     docker login
     docker push <your-docker-repo-name>/aoai-demo-app:latest
     ```
